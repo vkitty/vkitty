@@ -26,8 +26,13 @@ kitty.src = function(globs,options){
     return Pipe;
 };
 
-kitty._src = function(globs,options){
-    return vfs.src(globs,options).pipe(new Transform());
+kitty._src = function(globs,options,errBack){
+    var stream = vfs.src(globs,options);
+    var result = stream.pipe(new Transform());
+    errBack && stream.on('error',function(err){
+        errBack(err);
+    });
+    return result;
 };
 
 kitty.dest = function(folder="./build/pages",options){
@@ -49,7 +54,6 @@ kitty._rewriteStreamTransform = function(stream,folder){
     stream._transform = function(file,encoding,callback){
         var newCallback = function(){
             var destPath  = path.resolve(kitty.config.baseDir,folder,file.relative);
-            Util.console.success(destPath);
             callback.apply(null,arguments);
         };
         oldTransform(file,encoding,newCallback);

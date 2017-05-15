@@ -1,12 +1,12 @@
 {
   "name": "vkitty",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "description": "hello kitty",
   "homepage": "https://github.com/vkitty/vkitty",
   "repository": "https://github.com/vkitty/vkitty.git",
   "main": "./index.js",
   "scripts": {
-    "dev": "gulp ./test/gulpfile.js dev"
+    "dev": "node ./test/test.js"
   },
   "keywords": [
     "kitty",
