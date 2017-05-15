@@ -27,12 +27,16 @@ vkitty是一种前端构建工具。取名自hello kitty，其希望能够打造
 
 题外：如果写一个小小的组件都要用到webpack，那将是如何的酸爽/(ㄒoㄒ)/~~
 
-[查看api](http://docs.vkitty.org/)
+
+
+## 更多内容
+
+[查看api](http://docs.vkitty.org/)  [问题反馈](https://github.com/vkitty/vkitty/issues)
 
 
 
 
-##安装
+## 安装
 ```shell
 npm install vkitty --save
 ```
