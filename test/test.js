@@ -4,12 +4,12 @@ var kitty = require('../index.js');
 
 
 function test(){
-    kitty.src('./demo/compare/cdn/index.html')
-        .pipe(kitty.dest('./build/pages/cdn'))
+    kitty.src('./demo/compare/comments/index.html')
+        .pipe(kitty.dest('./build/pages/comments'))
         .pipe(kitty.cdnDest('./build/static/cdn'));
 }
 
-//test();
+test();
 
 
 function compare(){
@@ -44,4 +44,4 @@ function compare(){
     },1000);
 }
 
-compare();
+//compare();
