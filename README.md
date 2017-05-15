@@ -80,6 +80,7 @@ gulp.task('prod',function(){
 ### v0.1.4
 * 提交官网vkitty.org
 * 修复loaders.*cdn bug
+* 增加错误提示
 
 ### v0.1.3
 
