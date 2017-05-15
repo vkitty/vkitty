@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title222</title>
+</head>
+<body><script>(function (modules) {
+    var installedModules = {};
+    function _kitty_require(moduleId) {
+        if(installedModules[moduleId]){
+            return installedModules[moduleId].exports;
+        }
+        var module = installedModules[moduleId] = {
+            exports:'',
+            id:moduleId
+        };
+        modules[moduleId].call(module.exports,module,_kitty_require);
+        return module.exports;
+    }
+    return _kitty_require('0');
+})({"0":function(module,_kitty_require){console.log(2)/*
+var a = __kitty('./a.js');
+<console.log(b)
+console.log(a)*/
+console.log(2);
+ //var a = __kitty('./a.js');
+console.log(1);}});</script><style type="text/css">/**
+sdfsdfsdf
+*/
+body {
+  color: red;
+}
+</style></body>
+</html>

@@ -9,7 +9,7 @@ function test(){
         .pipe(kitty.cdnDest('./build/static/cdn'));
 }
 
-test();
+//test();
 
 
 function compare(){
@@ -19,7 +19,7 @@ function compare(){
 
 
     var getContent = function(file){
-        return fs.readFileSync(file).toString();
+        return fs.readFileSync(file).toString().trim();
     };
 
     var equalFile = function(file1,file2){
@@ -41,7 +41,8 @@ function compare(){
         equalFile('./build/pages/text/index.html','./demo/compare/text/compare.html');
         equalFile('./build/static/aaaaa.css','./demo/compare/cdn/compare.less');
         equalFile('./build/pages/common/index.html','./demo/compare/common/compare.html');
+        equalFile('./build/pages/comments/index.html','./demo/compare/comments/compare.html');
     },1000);
 }
 
-//compare();
+compare();
