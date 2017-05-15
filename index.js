@@ -54,6 +54,7 @@ kitty._rewriteStreamTransform = function(stream,folder){
     stream._transform = function(file,encoding,callback){
         var newCallback = function(){
             var destPath  = path.resolve(kitty.config.baseDir,folder,file.relative);
+            Util.console.success(destPath);
             callback.apply(null,arguments);
         };
         oldTransform(file,encoding,newCallback);
