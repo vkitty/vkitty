@@ -15,6 +15,6 @@ module.exports = {
     cdnDest:function(folder="./build/static",options){
         return this.kitty.cdnDest(folder,options);
     },
-    loaders:Kitty.loaders,
-    config:Kitty.config
+    loaders:Gkitty.loaders,
+    config:Gkitty.config
 };
