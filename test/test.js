@@ -4,9 +4,9 @@ var kitty = require('../index.js');
 
 
 function test(){
-    kitty.src('./demo/compare/comments/index.html')
-        .pipe(kitty.dest('./build/pages/comments'))
-        .pipe(kitty.cdnDest('./build/static/cdn'));
+    kitty.src('./demo/compare/text/index.html')
+        .pipe(kitty.dest('./build/pages/text'))
+        .pipe(kitty.cdnDest('./build/static/text'));
 }
 
 //test();
