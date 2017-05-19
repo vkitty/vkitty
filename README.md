@@ -79,6 +79,7 @@ gulp.task('prod',function(){
 
 ### v0.2.0
 * 支持多个kitty.src\kitty.watch同时并且可混合使用
+* 修复了反向编译不稳定情况
 
 
 ### v0.1.4

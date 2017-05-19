@@ -4,13 +4,9 @@ var kitty = require('../index.js');
 
 
 function test(){
-    kitty.watch(['./demo/compare/srcs/src1.html','./demo/compare/srcs/src3.html'])
-        .pipe(kitty.dest('./build/pages/srcs'))
-        .pipe(kitty.cdnDest('./build/static/srcs'));
-
-    kitty.src(['./demo/compare/srcs/src2.html'])
-        .pipe(kitty.dest('./build/pages/srcs'))
-        .pipe(kitty.cdnDest('./build/static/srcs'));
+    kitty.watch(['./demo/compare/requirenovar/index.html'])
+        .pipe(kitty.dest('./build/pages/requirenovar'))
+        .pipe(kitty.cdnDest('./build/static/requirenovar'));
 }
 
 //test();
@@ -54,6 +50,7 @@ function compare(){
         equalFile('./build/static/aaaaa.css','./demo/compare/cdn/compare.less');
         equalFile('./build/pages/common/index.html','./demo/compare/common/compare.html');
         equalFile('./build/pages/comments/index.html','./demo/compare/comments/compare.html');
+        equalFile('./build/pages/requirenovar/index.html','./demo/compare/requirenovar/compare.html');
         equalFile('./build/pages/srcs/src1.html','./demo/compare/srcs/compare/src1.html');
         equalFile('./build/pages/srcs/src2.html','./demo/compare/srcs/compare/src2.html');
         equalFile('./build/pages/srcs/src3.html','./demo/compare/srcs/compare/src3.html');

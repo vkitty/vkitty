@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body><script>(function (modules) {
+    var installedModules = {};
+    function _kitty_require(moduleId) {
+        if(installedModules[moduleId]){
+            return installedModules[moduleId].exports;
+        }
+        var module = installedModules[moduleId] = {
+            exports:'',
+            id:moduleId
+        };
+        modules[moduleId].call(module.exports,module,_kitty_require);
+        return module.exports;
+    }
+    return _kitty_require('4');
+})({"4":function(module,_kitty_require){_kitty_require("3");
+console.log(2222222);},"3":function(module,_kitty_require){console.log(1111)}});</script></body>
+</html>
