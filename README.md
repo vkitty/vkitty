@@ -77,6 +77,10 @@ gulp.task('prod',function(){
 
 ## changelogs
 
+### v0.2.0
+* 支持多个kitty.src\kitty.watch同时并且可混合使用
+
+
 ### v0.1.4
 * 提交官网vkitty.org
 * 修复loaders.*cdn bug
