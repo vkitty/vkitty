@@ -82,14 +82,6 @@ gulp.task('prod',function(){
 * 修复了反向编译不稳定情况
 
 
-### v0.1.4
-* 提交官网vkitty.org
-* 修复loaders.*cdn bug
-* 增加错误提示
-
-### v0.1.3
-
-* loaders细分js\img\css\media类型
 
 ### v0.1.1
 
