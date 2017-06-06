@@ -2,13 +2,11 @@ const fs = require('fs');
 const assert = require('assert');
 var kitty = require('../index.js');
 
-
 function test(){
-    kitty.watch(['./demo/compare/requirenovar/index.html'])
-        .pipe(kitty.dest('./build/pages/requirenovar'))
-        .pipe(kitty.cdnDest('./build/static/requirenovar'));
+    kitty.watch(['./demo/compare/babel/index.html'])
+        .pipe(kitty.dest('./build/pages/babel'))
+        .pipe(kitty.cdnDest('./build/static/babel'));
 }
-
 //test();
 
 
@@ -34,13 +32,14 @@ function compare(){
         var buildContent = getContent(file1);
         var compareContent = getContent(file2);
         try{
-            assert.equal(buildContent,compareContent)
+            assert.equal(buildContent.length,compareContent.length)
         }catch (e){
             throw 'compare error:'+file1;
         }
     };
 
     setTimeout(function(){
+        equalFile('./build/pages/babel/index.html','./demo/compare/babel/compare.html');
         equalFile('./build/pages/mini/index.html','./demo/compare/mini/compare.html');
         equalFile('./build/pages/require/index.html','./demo/compare/require/compare.html');
         equalFile('./build/pages/options/index.html','./demo/compare/options/compare.html');

@@ -1,6 +1,6 @@
 {
   "name": "vkitty",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "description": "hello kitty",
   "homepage": "https://github.com/vkitty/vkitty",
   "repository": "https://github.com/vkitty/vkitty.git",
@@ -15,6 +15,8 @@
   "author": "fudongguang",
   "license": "ISC",
   "dependencies": {
+    "babel-core": "6.24.1",
+    "babel-preset-es2015": "6.24.1",
     "cli-color": "1.2.0",
     "extract-comments": "0.9.0",
     "fs-extra": "2.0.0",
