@@ -77,7 +77,7 @@ gulp.task('prod',function(){
 
 ## changelogs
 
-### v0.2.0
+### v0.2.2
 * 内置loaders.babel功能,支持es6 to es5
 
 
