@@ -78,6 +78,10 @@ gulp.task('prod',function(){
 ## changelogs
 
 ### v0.2.0
+* 内置loaders.babel功能,支持es6 to es5
+
+
+### v0.2.0
 * 支持多个kitty.src\kitty.watch同时并且可混合使用
 * 修复了反向编译不稳定情况
 
